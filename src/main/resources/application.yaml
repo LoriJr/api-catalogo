@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-catalogo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5410/${POSTGRES_DB}
+    driver-class-name: org.postgresql.Driver
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 9010
